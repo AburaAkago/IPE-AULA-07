@@ -1,0 +1,12 @@
+import os
+os.system('cls')
+diretorio = os.getcwd()
+print(f'vc esta no diretorio {diretorio}')
+arq = open('saudacao.txt', 'r', encoding='utf-8')
+saudacao = arq.read()
+print(arq.read())
+print(arq.readline())
+print(arq.readlines())
+lista_saudacao=saudacao.split('\n')
+print(lista_saudacao)
+arq.close()
